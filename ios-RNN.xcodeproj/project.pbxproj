@@ -1,0 +1,454 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8E1EF1381F0FEBD000B3E12B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E1EF1371F0FEBD000B3E12B /* main.m */; };
+		8E1EF13B1F0FEBD000B3E12B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E1EF13A1F0FEBD000B3E12B /* AppDelegate.m */; };
+		8E1EF13E1F0FEBD000B3E12B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E1EF13D1F0FEBD000B3E12B /* ViewController.m */; };
+		8E1EF1411F0FEBD000B3E12B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E1EF13F1F0FEBD000B3E12B /* Main.storyboard */; };
+		8E1EF1431F0FEBD000B3E12B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E1EF1421F0FEBD000B3E12B /* Assets.xcassets */; };
+		8E1EF1461F0FEBD000B3E12B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E1EF1441F0FEBD000B3E12B /* LaunchScreen.storyboard */; };
+		8E1EF16D1F0FED0300B3E12B /* RNNActivation.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E1EF1501F0FED0300B3E12B /* RNNActivation.m */; };
+		8E1EF16E1F0FED0300B3E12B /* RNNCost.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E1EF1531F0FED0300B3E12B /* RNNCost.m */; };
+		8E1EF16F1F0FED0300B3E12B /* RNNFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E1EF1561F0FED0300B3E12B /* RNNFetcher.m */; };
+		8E1EF1701F0FED0300B3E12B /* RNNMath.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E1EF1591F0FED0300B3E12B /* RNNMath.m */; };
+		8E1EF1711F0FED0300B3E12B /* RNNPartial.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E1EF15B1F0FED0300B3E12B /* RNNPartial.m */; };
+		8E1EF1721F0FED0300B3E12B /* RNNNet.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E1EF15E1F0FED0300B3E12B /* RNNNet.m */; };
+		8E1EF1731F0FED0300B3E12B /* RNNNetOutputs.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E1EF1601F0FED0300B3E12B /* RNNNetOutputs.m */; };
+		8E1EF1741F0FED0300B3E12B /* RNNOptimization.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E1EF1631F0FED0300B3E12B /* RNNOptimization.m */; };
+		8E1EF1751F0FED0300B3E12B /* RNNTimestep.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E1EF1651F0FED0300B3E12B /* RNNTimestep.m */; };
+		8E1EF1761F0FED0300B3E12B /* RNNPattern.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E1EF1681F0FED0300B3E12B /* RNNPattern.m */; };
+		8E1EF1771F0FED0300B3E12B /* RNNSequenceOutput.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E1EF16A1F0FED0300B3E12B /* RNNSequenceOutput.m */; };
+		8E1EF1781F0FED0300B3E12B /* RNN.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E1EF16C1F0FED0300B3E12B /* RNN.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		8E1EF1331F0FEBD000B3E12B /* ios-RNN.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ios-RNN.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E1EF1371F0FEBD000B3E12B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8E1EF1391F0FEBD000B3E12B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		8E1EF13A1F0FEBD000B3E12B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		8E1EF13C1F0FEBD000B3E12B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		8E1EF13D1F0FEBD000B3E12B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		8E1EF1401F0FEBD000B3E12B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8E1EF1421F0FEBD000B3E12B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8E1EF1451F0FEBD000B3E12B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8E1EF1471F0FEBD000B3E12B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8E1EF14F1F0FED0300B3E12B /* RNNActivation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNNActivation.h; sourceTree = "<group>"; };
+		8E1EF1501F0FED0300B3E12B /* RNNActivation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNNActivation.m; sourceTree = "<group>"; };
+		8E1EF1521F0FED0300B3E12B /* RNNCost.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNNCost.h; sourceTree = "<group>"; };
+		8E1EF1531F0FED0300B3E12B /* RNNCost.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNNCost.m; sourceTree = "<group>"; };
+		8E1EF1551F0FED0300B3E12B /* RNNFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNNFetcher.h; sourceTree = "<group>"; };
+		8E1EF1561F0FED0300B3E12B /* RNNFetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNNFetcher.m; sourceTree = "<group>"; };
+		8E1EF1581F0FED0300B3E12B /* RNNMath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNNMath.h; sourceTree = "<group>"; };
+		8E1EF1591F0FED0300B3E12B /* RNNMath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNNMath.m; sourceTree = "<group>"; };
+		8E1EF15A1F0FED0300B3E12B /* RNNPartial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNNPartial.h; sourceTree = "<group>"; };
+		8E1EF15B1F0FED0300B3E12B /* RNNPartial.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNNPartial.m; sourceTree = "<group>"; };
+		8E1EF15D1F0FED0300B3E12B /* RNNNet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNNNet.h; sourceTree = "<group>"; };
+		8E1EF15E1F0FED0300B3E12B /* RNNNet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNNNet.m; sourceTree = "<group>"; };
+		8E1EF15F1F0FED0300B3E12B /* RNNNetOutputs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNNNetOutputs.h; sourceTree = "<group>"; };
+		8E1EF1601F0FED0300B3E12B /* RNNNetOutputs.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNNNetOutputs.m; sourceTree = "<group>"; };
+		8E1EF1621F0FED0300B3E12B /* RNNOptimization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNNOptimization.h; sourceTree = "<group>"; };
+		8E1EF1631F0FED0300B3E12B /* RNNOptimization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNNOptimization.m; sourceTree = "<group>"; };
+		8E1EF1641F0FED0300B3E12B /* RNNTimestep.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNNTimestep.h; sourceTree = "<group>"; };
+		8E1EF1651F0FED0300B3E12B /* RNNTimestep.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNNTimestep.m; sourceTree = "<group>"; };
+		8E1EF1671F0FED0300B3E12B /* RNNPattern.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNNPattern.h; sourceTree = "<group>"; };
+		8E1EF1681F0FED0300B3E12B /* RNNPattern.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNNPattern.m; sourceTree = "<group>"; };
+		8E1EF1691F0FED0300B3E12B /* RNNSequenceOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNNSequenceOutput.h; sourceTree = "<group>"; };
+		8E1EF16A1F0FED0300B3E12B /* RNNSequenceOutput.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNNSequenceOutput.m; sourceTree = "<group>"; };
+		8E1EF16B1F0FED0300B3E12B /* RNN.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNN.h; sourceTree = "<group>"; };
+		8E1EF16C1F0FED0300B3E12B /* RNN.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNN.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8E1EF1301F0FEBD000B3E12B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8E1EF12A1F0FEBD000B3E12B = {
+			isa = PBXGroup;
+			children = (
+				8E1EF14D1F0FED0300B3E12B /* RNN */,
+				8E1EF1351F0FEBD000B3E12B /* ios-RNN */,
+				8E1EF1341F0FEBD000B3E12B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8E1EF1341F0FEBD000B3E12B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8E1EF1331F0FEBD000B3E12B /* ios-RNN.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8E1EF1351F0FEBD000B3E12B /* ios-RNN */ = {
+			isa = PBXGroup;
+			children = (
+				8E1EF1391F0FEBD000B3E12B /* AppDelegate.h */,
+				8E1EF13A1F0FEBD000B3E12B /* AppDelegate.m */,
+				8E1EF13C1F0FEBD000B3E12B /* ViewController.h */,
+				8E1EF13D1F0FEBD000B3E12B /* ViewController.m */,
+				8E1EF13F1F0FEBD000B3E12B /* Main.storyboard */,
+				8E1EF1421F0FEBD000B3E12B /* Assets.xcassets */,
+				8E1EF1441F0FEBD000B3E12B /* LaunchScreen.storyboard */,
+				8E1EF1471F0FEBD000B3E12B /* Info.plist */,
+				8E1EF1361F0FEBD000B3E12B /* Supporting Files */,
+			);
+			path = "ios-RNN";
+			sourceTree = "<group>";
+		};
+		8E1EF1361F0FEBD000B3E12B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8E1EF1371F0FEBD000B3E12B /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8E1EF14D1F0FED0300B3E12B /* RNN */ = {
+			isa = PBXGroup;
+			children = (
+				8E1EF14E1F0FED0300B3E12B /* Activation */,
+				8E1EF1511F0FED0300B3E12B /* Cost */,
+				8E1EF1541F0FED0300B3E12B /* Fetcher */,
+				8E1EF1571F0FED0300B3E12B /* Math */,
+				8E1EF15C1F0FED0300B3E12B /* Nets */,
+				8E1EF1611F0FED0300B3E12B /* Optimization */,
+				8E1EF1661F0FED0300B3E12B /* Patterns */,
+				8E1EF16B1F0FED0300B3E12B /* RNN.h */,
+				8E1EF16C1F0FED0300B3E12B /* RNN.m */,
+			);
+			path = RNN;
+			sourceTree = "<group>";
+		};
+		8E1EF14E1F0FED0300B3E12B /* Activation */ = {
+			isa = PBXGroup;
+			children = (
+				8E1EF14F1F0FED0300B3E12B /* RNNActivation.h */,
+				8E1EF1501F0FED0300B3E12B /* RNNActivation.m */,
+			);
+			path = Activation;
+			sourceTree = "<group>";
+		};
+		8E1EF1511F0FED0300B3E12B /* Cost */ = {
+			isa = PBXGroup;
+			children = (
+				8E1EF1521F0FED0300B3E12B /* RNNCost.h */,
+				8E1EF1531F0FED0300B3E12B /* RNNCost.m */,
+			);
+			path = Cost;
+			sourceTree = "<group>";
+		};
+		8E1EF1541F0FED0300B3E12B /* Fetcher */ = {
+			isa = PBXGroup;
+			children = (
+				8E1EF1551F0FED0300B3E12B /* RNNFetcher.h */,
+				8E1EF1561F0FED0300B3E12B /* RNNFetcher.m */,
+			);
+			path = Fetcher;
+			sourceTree = "<group>";
+		};
+		8E1EF1571F0FED0300B3E12B /* Math */ = {
+			isa = PBXGroup;
+			children = (
+				8E1EF1581F0FED0300B3E12B /* RNNMath.h */,
+				8E1EF1591F0FED0300B3E12B /* RNNMath.m */,
+				8E1EF15A1F0FED0300B3E12B /* RNNPartial.h */,
+				8E1EF15B1F0FED0300B3E12B /* RNNPartial.m */,
+			);
+			path = Math;
+			sourceTree = "<group>";
+		};
+		8E1EF15C1F0FED0300B3E12B /* Nets */ = {
+			isa = PBXGroup;
+			children = (
+				8E1EF15D1F0FED0300B3E12B /* RNNNet.h */,
+				8E1EF15E1F0FED0300B3E12B /* RNNNet.m */,
+				8E1EF15F1F0FED0300B3E12B /* RNNNetOutputs.h */,
+				8E1EF1601F0FED0300B3E12B /* RNNNetOutputs.m */,
+			);
+			path = Nets;
+			sourceTree = "<group>";
+		};
+		8E1EF1611F0FED0300B3E12B /* Optimization */ = {
+			isa = PBXGroup;
+			children = (
+				8E1EF1621F0FED0300B3E12B /* RNNOptimization.h */,
+				8E1EF1631F0FED0300B3E12B /* RNNOptimization.m */,
+				8E1EF1641F0FED0300B3E12B /* RNNTimestep.h */,
+				8E1EF1651F0FED0300B3E12B /* RNNTimestep.m */,
+			);
+			path = Optimization;
+			sourceTree = "<group>";
+		};
+		8E1EF1661F0FED0300B3E12B /* Patterns */ = {
+			isa = PBXGroup;
+			children = (
+				8E1EF1671F0FED0300B3E12B /* RNNPattern.h */,
+				8E1EF1681F0FED0300B3E12B /* RNNPattern.m */,
+				8E1EF1691F0FED0300B3E12B /* RNNSequenceOutput.h */,
+				8E1EF16A1F0FED0300B3E12B /* RNNSequenceOutput.m */,
+			);
+			path = Patterns;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8E1EF1321F0FEBD000B3E12B /* ios-RNN */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8E1EF14A1F0FEBD000B3E12B /* Build configuration list for PBXNativeTarget "ios-RNN" */;
+			buildPhases = (
+				8E1EF12F1F0FEBD000B3E12B /* Sources */,
+				8E1EF1301F0FEBD000B3E12B /* Frameworks */,
+				8E1EF1311F0FEBD000B3E12B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ios-RNN";
+			productName = "ios-RNN";
+			productReference = 8E1EF1331F0FEBD000B3E12B /* ios-RNN.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8E1EF12B1F0FEBD000B3E12B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Kalvar Lin";
+				TargetAttributes = {
+					8E1EF1321F0FEBD000B3E12B = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 8E1EF12E1F0FEBD000B3E12B /* Build configuration list for PBXProject "ios-RNN" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8E1EF12A1F0FEBD000B3E12B;
+			productRefGroup = 8E1EF1341F0FEBD000B3E12B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8E1EF1321F0FEBD000B3E12B /* ios-RNN */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8E1EF1311F0FEBD000B3E12B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E1EF1461F0FEBD000B3E12B /* LaunchScreen.storyboard in Resources */,
+				8E1EF1431F0FEBD000B3E12B /* Assets.xcassets in Resources */,
+				8E1EF1411F0FEBD000B3E12B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8E1EF12F1F0FEBD000B3E12B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E1EF1771F0FED0300B3E12B /* RNNSequenceOutput.m in Sources */,
+				8E1EF1761F0FED0300B3E12B /* RNNPattern.m in Sources */,
+				8E1EF13E1F0FEBD000B3E12B /* ViewController.m in Sources */,
+				8E1EF16E1F0FED0300B3E12B /* RNNCost.m in Sources */,
+				8E1EF1711F0FED0300B3E12B /* RNNPartial.m in Sources */,
+				8E1EF16F1F0FED0300B3E12B /* RNNFetcher.m in Sources */,
+				8E1EF13B1F0FEBD000B3E12B /* AppDelegate.m in Sources */,
+				8E1EF1721F0FED0300B3E12B /* RNNNet.m in Sources */,
+				8E1EF16D1F0FED0300B3E12B /* RNNActivation.m in Sources */,
+				8E1EF1741F0FED0300B3E12B /* RNNOptimization.m in Sources */,
+				8E1EF1731F0FED0300B3E12B /* RNNNetOutputs.m in Sources */,
+				8E1EF1751F0FED0300B3E12B /* RNNTimestep.m in Sources */,
+				8E1EF1781F0FED0300B3E12B /* RNN.m in Sources */,
+				8E1EF1701F0FED0300B3E12B /* RNNMath.m in Sources */,
+				8E1EF1381F0FEBD000B3E12B /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		8E1EF13F1F0FEBD000B3E12B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8E1EF1401F0FEBD000B3E12B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8E1EF1441F0FEBD000B3E12B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8E1EF1451F0FEBD000B3E12B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8E1EF1481F0FEBD000B3E12B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8E1EF1491F0FEBD000B3E12B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8E1EF14B1F0FEBD000B3E12B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "ios-RNN/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kalvar.rnn;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		8E1EF14C1F0FEBD000B3E12B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "ios-RNN/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kalvar.rnn;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8E1EF12E1F0FEBD000B3E12B /* Build configuration list for PBXProject "ios-RNN" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8E1EF1481F0FEBD000B3E12B /* Debug */,
+				8E1EF1491F0FEBD000B3E12B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8E1EF14A1F0FEBD000B3E12B /* Build configuration list for PBXNativeTarget "ios-RNN" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8E1EF14B1F0FEBD000B3E12B /* Debug */,
+				8E1EF14C1F0FEBD000B3E12B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8E1EF12B1F0FEBD000B3E12B /* Project object */;
+}
