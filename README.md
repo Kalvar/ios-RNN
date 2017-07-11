@@ -72,6 +72,7 @@ RNN *nn = [fetcher objectForKey:@"save1"];
 1. RMSProp <br />
 2. Adam <br />
 3. Nadam <br />
+4. Truncated BPTT <br />
 
 ## Version
 
