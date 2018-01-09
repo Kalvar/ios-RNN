@@ -45,6 +45,7 @@ typedef NS_ENUM(NSInteger, RNNNetActivations)
 - (void)removeAllWeights;
 - (void)renewWeights:(NSArray <NSNumber *> *)newWeights recurrentWeights:(NSArray <NSNumber *> *)newRecurrents;
 - (void)randomizeWeightsAtCount:(NSInteger)randomCount max:(double)max min:(double)min;
+- (void)randomizeRecurrentWeightsAtCount:(NSInteger)randomCount max:(double)max min:(double)min;
 
 - (void)checkToFillZero;
 - (void)clear;

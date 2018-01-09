@@ -214,11 +214,13 @@
 
 // To check out all arraies do they need to fill up zero objects first to avoid out of bound crash ?
 // If yes it need, this function is going to fill the zero objects in arries.
+// 補上 t=0 時刻的權重修正量 (Last Delta Weight / Last Recurrent Delta Weights)，這樣整個運算流程能更順暢
 - (void)checkToFillZero
 {
     if(_optimization.needToFillZero)
     {
         [_optimization fillZeroToLastDeltaWeightsForCount:[_weights count]];
+        [_optimization fillZeroToLastDeltaRecurrentWeightsForCount:[_recurrentWeights count]];
     }
 }
 
@@ -252,17 +254,27 @@
 // Randomizing for weights and recurrent weights at the same time.
 - (void)randomizeWeightsAtCount:(NSInteger)randomCount max:(double)max min:(double)min
 {
-    [self removeAllWeights];
+    [_weights removeAllObjects];
+    _bias = 0.0f;
+    
     for( NSInteger i=0; i<randomCount; i++ )
     {
         [_weights addObject:@([_math randomDoubleMax:max min:min])];
-        if(_hasRecurrent)
+    }
+    
+    _bias = [_math randomDoubleMax:max min:min];
+}
+
+- (void)randomizeRecurrentWeightsAtCount:(NSInteger)randomCount max:(double)max min:(double)min
+{
+    if(_hasRecurrent)
+    {
+        [_recurrentWeights removeAllObjects];
+        for( NSInteger i=0; i<randomCount; i++ )
         {
             [_recurrentWeights addObject:@([_math randomDoubleMax:max min:min])];
         }
     }
-    
-    _bias = [_math randomDoubleMax:max min:min];
 }
 
 #pragma mark - Updating

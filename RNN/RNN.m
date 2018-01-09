@@ -304,6 +304,7 @@
     
     [_hiddenLayer enumerateObjectsUsingBlock:^(RNNNet * _Nonnull hiddenNet, NSUInteger idx, BOOL * _Nonnull stop) {
         [hiddenNet randomizeWeightsAtCount:inputCount max:max min:min];
+        [hiddenNet randomizeRecurrentWeightsAtCount:hiddenCount max:max min:min];
     }];
     
     [_outputLayer enumerateObjectsUsingBlock:^(RNNNet * _Nonnull outputNet, NSUInteger idx, BOOL * _Nonnull stop) {

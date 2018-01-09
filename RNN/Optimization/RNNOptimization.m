@@ -60,11 +60,19 @@
 - (void)fillZeroToLastDeltaWeightsForCount:(NSInteger)count
 {
     [_lastDeltaWeights removeAllObjects];
-    [_lastRecurrentDeltaWeights removeAllObjects];
     
     for(NSInteger i=0; i<count; i++)
     {
         [_lastDeltaWeights addObject:@(0.0f)];
+    }
+}
+
+- (void)fillZeroToLastDeltaRecurrentWeightsForCount:(NSInteger)count
+{
+    [_lastRecurrentDeltaWeights removeAllObjects];
+    
+    for(NSInteger i=0; i<count; i++)
+    {
         [_lastRecurrentDeltaWeights addObject:@(0.0f)];
     }
 }
@@ -74,13 +82,13 @@
     if([deltaWeights count] > 0)
     {
         [_lastDeltaWeights removeAllObjects];
-        [_lastDeltaWeights addObjectsFromArray:deltaWeights];
+        [_lastDeltaWeights addObjectsFromArray:[deltaWeights copy]];
     }
     
     if([recurrentWeights count] > 0)
     {
         [_lastRecurrentDeltaWeights removeAllObjects];
-        [_lastRecurrentDeltaWeights addObjectsFromArray:recurrentWeights];
+        [_lastRecurrentDeltaWeights addObjectsFromArray:[recurrentWeights copy]];
     }
 }
 
@@ -92,18 +100,20 @@
  */
 - (double)deltaWeightAtIndex:(NSInteger)weightIndex net:(RNNNet *)net lastLayerOutput:(double)lastLayerOutput learningRate:(double)learningRate isRecurrent:(BOOL)isRecurrent
 {
-    // SGD: new w = old w + (- learning rate * - error value * f'(net) * x
-    double deltaWeight = learningRate * net.deltaValue * lastLayerOutput;
+    double deltaWeight = 0.0f;
     switch (_method) {
         case RNNOptimizationFixedInertia:
         {
             // 慣性項
             NSArray <NSNumber *> *deltas = isRecurrent ? _lastRecurrentDeltaWeights : _lastDeltaWeights;
-            deltaWeight += (_inertialRate * [[deltas objectAtIndex:weightIndex] doubleValue]);
+            deltaWeight = learningRate * net.deltaValue * lastLayerOutput + (_inertialRate * [[deltas objectAtIndex:weightIndex] doubleValue]);
         }
             break;
         case RNNOptimizationStandardSGD:
         default:
+            // SGD: new w = old w + (-learning rate * -error value * f'(net) * x)
+            // -> net.deltaValue = -error value * f'(net)
+            deltaWeight = learningRate * net.deltaValue * lastLayerOutput;
             break;
     }
     

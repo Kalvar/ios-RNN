@@ -27,6 +27,7 @@ typedef NS_ENUM(NSInteger, RNNOptimizationMethods)
 + (instancetype)shared;
 
 - (void)fillZeroToLastDeltaWeightsForCount:(NSInteger)count;
+- (void)fillZeroToLastDeltaRecurrentWeightsForCount:(NSInteger)count;
 - (void)recordDeltaWeights:(NSArray <NSNumber *> *)deltaWeights recurrentDeltaWeights:(NSArray <NSNumber *> *)recurrentWeights;
 - (double)deltaWeightAtIndex:(NSInteger)weightIndex net:(RNNNet *)net lastLayerOutput:(double)lastLayerOutput learningRate:(double)learningRate isRecurrent:(BOOL)isRecurrent;
 - (double)deltaWeightAtIndex:(NSInteger)weightIndex net:(RNNNet *)net lastLayerOutput:(double)lastLayerOutput learningRate:(double)learningRate;
