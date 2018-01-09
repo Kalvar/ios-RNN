@@ -1,9 +1,9 @@
 Pod::Spec.new do |s|
   s.name         = "RNN"
-  s.version      = "1.0"
-  s.summary      = "Simple Recurrent Neural Network."
+  s.version      = "1.1"
+  s.summary      = "Standard Recurrent Neural Network."
   s.description  = <<-DESC
-                   Simple Recurrent Neural Network that familiar with time series analysis.
+                   Standard Recurrent Neural Network that familiar with time series analysis.
                    DESC
   s.homepage     = "https://github.com/Kalvar/ios-RNN"
   s.license      = { :type => 'MIT', :file => 'LICENSE' }

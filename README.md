@@ -1,13 +1,13 @@
 ios-RNN
 =================
 
-Simple Recurrent Neural Network that familiar with time series analysis, this RNN implemented 3 layers (Input, Hidden, Output) and Full-BPTT.
+Standard Recurrent Neural Network that familiar with time series analysis, this RNN implemented 3 layers (Input, Hidden, Output) and Full-BPTT.
 
 #### Podfile
 
 ```ruby
 platform :ios, '9.0'
-pod "RNN", "~> 1.0"
+pod "RNN", "~> 1.1"
 ```
 
 ## How to use
@@ -76,7 +76,7 @@ RNN *nn = [fetcher objectForKey:@"save1"];
 
 ## Version
 
-V1.0
+V1.1
 
 ## License
 
