@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "RNN"
-  s.version      = "1.1.1"
+  s.version      = "1.1.2"
   s.summary      = "Standard Recurrent Neural Network."
   s.description  = <<-DESC
                    Standard Recurrent Neural Network that familiar with time series analysis.

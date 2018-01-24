@@ -94,7 +94,7 @@
 
 - (NSInteger)previousIndex
 {
-    // 當前的 Index 的上一刻 Index，故 -2
+    // 當前 Index 的上一刻 Index，故相對應的索引位置須 -2 (註: -1 為當前的 Index Number)
     return self.outputsCount - 2;
 }
 

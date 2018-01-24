@@ -304,7 +304,7 @@
     [_recurrentWeights enumerateObjectsUsingBlock:^(NSNumber * _Nonnull recurrentWeight, NSUInteger recurrentIndex, BOOL * _Nonnull stop) {
         __strong typeof(weakSelf) strongSelf = weakSelf;
         
-        double lastRecurrentOutput = [recurrentWeight doubleValue];
+        double lastRecurrentOutput = [[recurrentOutputs objectAtIndex:recurrentIndex] doubleValue];
         double recurrentGradient   = strongSelf.deltaValue * lastRecurrentOutput;
         [timestep addRecurrentGradient:@(recurrentGradient)];
         

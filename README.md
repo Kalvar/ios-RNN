@@ -7,7 +7,7 @@ Standard Recurrent Neural Network that familiar with time series analysis, this 
 
 ```ruby
 platform :ios, '9.0'
-pod "RNN", "~> 1.1.1"
+pod "RNN", "~> 1.1.2"
 ```
 
 ## How to use
@@ -76,7 +76,7 @@ RNN *nn = [fetcher objectForKey:@"save1"];
 
 ## Version
 
-V1.1.1
+V1.1.2
 
 ## License
 

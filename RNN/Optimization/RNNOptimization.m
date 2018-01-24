@@ -111,8 +111,10 @@
             break;
         case RNNOptimizationStandardSGD:
         default:
-            // SGD: new w = old w + (-learning rate * -error value * f'(net) * x)
-            // -> net.deltaValue = -error value * f'(net)
+            // SGD: new w = old w + (-learning rate * deltaValue * x)
+            //      -> x 可為 b[t][h] (hidden output) 或 b[t-1][h] (recurrent output) 或 x[i] (input feature)
+            // Output layer 的 deltaValue = aE/aw[hk] = -error value * f'(net)
+            // Hidden layer 的 deltaValue = aE/aw[ih] = SUM(deltaValue[t][hk] * w[hk]) + SUM(deltaValue[t+1][h'h] * w[h'h])
             deltaWeight = learningRate * net.deltaValue * lastLayerOutput;
             break;
     }
